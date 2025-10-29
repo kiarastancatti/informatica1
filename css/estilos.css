@@ -1,0 +1,26 @@
+/* Fondo general */
+body {
+  background-color: red;
+}
+
+/* Tamaño del menú (aplicado a los links, no a <li>) */
+.nav-link {
+  font-size: 28px;
+}
+
+/* ⚠️ IMPORTANTE:
+   NO usar reglas globales para todos los <div>.
+   Esa fue la causa de los “bloques rosados gigantes” y alturas fijas.
+   Si necesitás cajas de demo, creá una clase específica y úsala donde corresponda. */
+
+/* Opcional: estilos si en otras páginas usás .card para textos */
+.card {
+  background-color: #111;
+}
+.card-body {
+  background-color: #f06060;
+}
+
+.yo {
+    text-align: center;
+}
