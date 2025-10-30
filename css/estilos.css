@@ -1,19 +1,11 @@
-/* Fondo general */
-body {
-  background-color: red;
-}
 
-/* Tamaño del menú (aplicado a los links, no a <li>) */
+
+/* Tamaño del menú aplicado a los links */
 .nav-link {
   font-size: 28px;
 }
 
-/* ⚠️ IMPORTANTE:
-   NO usar reglas globales para todos los <div>.
-   Esa fue la causa de los “bloques rosados gigantes” y alturas fijas.
-   Si necesitás cajas de demo, creá una clase específica y úsala donde corresponda. */
 
-/* Opcional: estilos si en otras páginas usás .card para textos */
 .card {
   background-color: #111;
 }
@@ -24,3 +16,121 @@ body {
 .yo {
     text-align: center;
 }
+
+
+/* estilos mios - layout hecho por bootstrap */
+
+/* ajuste de tamaño de miniaturas */
+
+/* separación entre miniaturas */
+.item-galeria figure {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8f9fa;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  aspect-ratio: 1 / 1;
+}
+
+.miniatura {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .25s ease, filter .25s ease;
+  cursor: zoom-in;
+}
+
+.miniatura:hover {
+  transform: scale(1.03);
+  filter: brightness(1.06);
+}
+
+/*estilo mio para los botones del filtro  */
+#filtros {
+  justify-content: center;       /* con bootstrap - centra los botones horizontalmente */
+}
+
+#filtros .boton-filtro {
+  color: #000 !important;        /* texto negro */
+  border-color: #000 !important; /* borde negro */
+  font-size: 22px;                 /* tamaño de texto */
+  padding: 6px 18px;               /* un poco más de aire */
+  border-radius: 6px;              /* bordes suaves */
+  background-color: transparent;   /* fondo transparente por defecto */
+  transition: background-color .2s ease, color .2s ease;
+}
+
+/* estado activo - botón seleccionado */
+#filtros .boton-filtro.activo {
+  background-color: #000 !important; /* fondo negro */
+  color: #fff !important;            /* texto blanco */
+}
+
+
+
+/* tarjeta tipo linktree  */
+
+/* contenedor de la tarjeta */
+.tarjeta-linktree {
+  max-width: 400px;
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0,0,0,.55);
+  overflow: hidden; /* recorta bordes redondeados */
+}
+
+/* imagen superior recortada prolija */
+.imagen-linktree {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* iconos de redes */
+.link-social {
+  transition: transform .2s ease, color .2s ease;
+}
+
+.link-social:hover {
+  transform: scale(1.2);
+  color: #1db954; /* verde tipo Spotify */
+}
+
+/* botón principal de Linktree */
+.boton-linktree {
+  border-radius: 999px;  
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.boton-linktree:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+
+/*MUSICA.HTML spotify */
+
+.sombra-album {
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.reproductor-spotify {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* botón verde Spotify */
+.boton-linktree {
+  border-radius: 999px;
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.boton-linktree:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+
+
