@@ -6,16 +6,12 @@
 }
 
 
-.card {
-  background-color: #111;
-}
-.card-body {
-  background-color: #f06060;
-}
 
 .yo {
     text-align: center;
 }
+
+
 
 
 /* estilos mios - layout hecho por bootstrap */
@@ -132,5 +128,8 @@
   filter: brightness(1.1);
 }
 
+
+/* Videos */
+.video-card video { display: block; }
 
 
